@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load the machine learning model
-model = joblib.load('trained_model.pkl')
+model = joblib.load('iris_model.pkl')
 
 def main():
     st.title('Machine Learning Model Deployment')
