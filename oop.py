@@ -62,11 +62,11 @@ class ModelHandler:
             pickle.dump(self.model, file)
 
 # ✅ Main Program
-file_path = "Iris.csv"  # Ensure this file exists in the same directory
+file_path = "IRIS.csv"  # Ensure this file exists in the same directory
 
 data_handler = DataHandler(file_path)
 data_handler.load_data()
-data_handler.create_input_output('Species')
+data_handler.create_input_output('species')
 
 model_handler = ModelHandler(data_handler.input_df, data_handler.output_df)
 model_handler.split_data()
