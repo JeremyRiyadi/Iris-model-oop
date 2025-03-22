@@ -11,8 +11,8 @@ def main():
     # Add user input components for 4 featudtsres
     sepal_length = st.number_input('sepal_length', min_value=0.0, max_value=10.0, value=0.1)
     sepal_width = st.slider('sepal_width', min_value=0.0, max_value=10.0, value=0.1)
-    patal_length = st.slider('patal_length', min_value=0.0, max_value=10.0, value=0.1)
-    patal_width = st.slider('patal_width', min_value=0.0, max_value=10.0, value=0.1)
+    patal_length = st.slider('petal_length', min_value=0.0, max_value=10.0, value=0.1)
+    patal_width = st.slider('petal_width', min_value=0.0, max_value=10.0, value=0.1)
     
     if st.button('Make Prediction'):
         features = [sepal_length,sepal_width,patal_length,patal_width]
